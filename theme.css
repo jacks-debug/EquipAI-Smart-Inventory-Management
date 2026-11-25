@@ -1,0 +1,10 @@
+/* TOPIC 8d: signature look - hero banner, gradient stat cards */
+.hero{display:flex;justify-content:space-between;align-items:center;padding:24px 28px;border-radius:22px;margin-bottom:18px;color:#fff;background:linear-gradient(120deg,#14213D,#2563EB 60%,#06B6D4);box-shadow:0 14px 34px #2563EB44;overflow:hidden}
+.hero h2{margin:0;font-size:22px}.hero p{margin:4px 0 0;opacity:.88}
+.orb{width:110px;height:110px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fffb,#fff2);animation:fl 5s ease-in-out infinite;flex:none}@keyframes fl{50%{transform:translateY(-12px)}}
+.stat{position:relative;overflow:hidden}.stat small{color:var(--mut);font-weight:600}
+.stat b{display:block;font-size:30px;margin-top:4px}
+.stat i{position:absolute;right:14px;top:12px;font-style:normal;font-size:26px}
+.stat::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--g)}
+.s0{--g:linear-gradient(90deg,#2563EB,#06B6D4)}.s1{--g:#16A34A}.s2{--g:#8b5cf6}.s3{--g:#F59E0B}.s4{--g:#EF4444}.s5{--g:#06B6D4}
+::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-thumb{background:#94a3b855;border-radius:9px}

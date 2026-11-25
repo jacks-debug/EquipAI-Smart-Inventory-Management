@@ -1,0 +1,19 @@
+/* TOPIC 8b: auth screen, sidebar, top bar, grids */
+#auth{min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 20% 20%,#06B6D4,transparent 40%),radial-gradient(circle at 80% 70%,#2563EB,transparent 45%),#14213D;animation:hue 12s ease-in-out infinite alternate}
+@keyframes hue{to{filter:hue-rotate(25deg)}}
+.box{background:var(--card);backdrop-filter:blur(18px);padding:30px;border-radius:24px;width:350px;box-shadow:0 25px 60px #0006;display:grid;gap:11px;border:1px solid #fff3}
+.box h2{font-size:26px;background:linear-gradient(90deg,var(--sec),var(--acc));-webkit-background-clip:text;color:transparent}
+#app{display:none;min-height:100vh}
+#side{position:fixed;inset:0 auto 0 0;width:236px;background:linear-gradient(180deg,#14213D,#0c1428);color:#cbd5e1;padding:18px 14px;transition:.3s;z-index:5}
+#side.c{width:70px}#side.c span.t{display:none}
+.logo{color:#fff;font-weight:800;font-size:19px;margin:0 0 20px 6px;white-space:nowrap;letter-spacing:.3px}
+.nav{display:flex;gap:12px;padding:11px 12px;border-radius:12px;cursor:pointer;margin:3px 0;white-space:nowrap;transition:.2s;position:relative}
+.nav:hover{background:#ffffff14;color:#fff;transform:translateX(3px)}
+.nav.on{background:linear-gradient(90deg,#2563EB,#06B6D488);color:#fff}
+#main{margin-left:236px;transition:.3s}#side.c~#main{margin-left:70px}
+#top{display:flex;gap:10px;align-items:center;padding:12px 26px;background:var(--card);backdrop-filter:blur(14px);border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:4}
+#top b{font-size:17px}
+#view{padding:26px;animation:f .45s ease}@keyframes f{from{opacity:0;transform:translateY(10px)}}
+.grid{display:grid;gap:16px}.g6{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(330px,1fr))}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;align-items:center}.row>*{width:auto}
+@media(max-width:760px){#side{width:70px}#side span.t{display:none}#main{margin-left:70px!important}#view{padding:14px}.fg{grid-template-columns:1fr!important}}

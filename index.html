@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EquipAI – College Equipment Inventory</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link rel="stylesheet" href="/static/css/base.css"><link rel="stylesheet" href="/static/css/layout.css"><link rel="stylesheet" href="/static/css/components.css"><link rel="stylesheet" href="/static/css/theme.css"></head>
+<body>
+<div id="auth"><div class="box"><h2 style="margin:0">⚙️ EquipAI</h2><small style="color:var(--mut)" id="amode">Sign in to continue</small>
+<input id="rn" placeholder="Full name" style="display:none"><input id="re" placeholder="Email" value="admin@college.edu"><input id="rp" type="password" placeholder="Password" value="admin123">
+<input id="rd" placeholder="Department" style="display:none"><button class="btn" id="ab">Login</button>
+<a href="#" id="at" style="text-align:center;color:var(--sec)">Create an account</a><a href="#" id="af" style="text-align:center;color:var(--mut)">Forgot password?</a>
+<small style="color:var(--mut)">Demo: admin@college.edu · hod@ · lab@ · faculty@ (all admin123)</small></div></div>
+<div id="app"><div id="side"><div class="logo">⚙️ <span class="t">EquipAI</span></div><div id="nav"></div></div>
+<div id="main"><div id="top"><button class="btn g s" id="tg">☰</button><b id="title"></b><span style="flex:1"></span><button class="btn g s" id="th">🌓</button><span id="who"></span><button class="btn g s" id="lo">Logout</button></div><div id="view"></div></div></div>
+<div id="modal"><div class="box" id="mb"></div></div>
+<script src="/static/js/core.js"></script><script src="/static/js/auth.js"></script><script src="/static/js/shell.js"></script><script src="/static/js/pages/dashboard.js"></script><script src="/static/js/pages/equipment.js"></script><script src="/static/js/pages/requests.js"></script><script src="/static/js/pages/ai.js"></script><script src="/static/js/pages/alerts.js"></script><script src="/static/js/pages/chat.js"></script><script src="/static/js/pages/admin.js"></script><script src="/static/js/main.js"></script></body></html>
